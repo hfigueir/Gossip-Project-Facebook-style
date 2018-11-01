@@ -16,5 +16,4 @@ cd thp-projet-62-gossip-team-devise
 bundle install
 heroku run rails db:migrate
 heroku run rails db:seed
-heroku run rails server
 ```
