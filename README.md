@@ -6,7 +6,6 @@
 
 Pour aller sur le site en *production*, merci de suivre ce lien : https://gossip-project-1.herokuapp.com/
 
-Pour un meilleur rendu, préférez google chrome comme navigateur !  😉
 
 
 ### Marche à suivre
