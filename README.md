@@ -1,7 +1,3 @@
-# The Hacking Project - Semaine 6 - Mardi
-
-
-
 ### Lien Heroku
 
 Pour aller sur le site en *production*, merci de suivre ce lien : https://gossip-project-1.herokuapp.com/
