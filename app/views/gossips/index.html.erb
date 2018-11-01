@@ -1,0 +1,35 @@
+<h1>Un ragot ?</h1>
+
+<table class="table">
+  <% @gossips.each do |gossip| %>
+    <tr>
+      <td><%= gossip.author %></td>
+      <td><%= gossip.content %></td>
+      <td><%= link_to "Liste des ragots", gossip %></td>
+      <td><%= link_to "Modifier", edit_gossip_path(gossip) %></td>
+      <td><%= link_to "Je me rétracte !",
+        gossip_path(gossip),
+        method: :delete,
+        data: { confirme: "C'est vrai ce mensonge ?" } %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+<!--<div class="container">
+  <% @gossips.each_with_index do |gossip, i| %>
+    <%if i%3 == 0 %>
+    <div class="row">
+    <% end %>
+      <div class="col">
+      <%= gossip.id %>
+      <%= gossip.author %>
+      <%= gossip.content %>
+      </div>
+    <%if i%3 == 0 %>
+    </div>
+    <% end %>
+  <% end %>
+</div>-->
+
+<%= link_to 'J\'ai un ragot !', new_gossip_path %>
