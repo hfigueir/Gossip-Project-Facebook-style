@@ -1,9 +1,0 @@
-<h1>Nouveau ragot !</h1>
-
-<%= form_tag("/gossips/#{@gossip.id}") do %>
-  <p>Qui es-tu ? <%= text_field_tag 'gossip[author]' %></p>
-  <p>Qu'est ce que tu veux nous dire? <%= text_area_tag 'gossip[content]' %></p>
-  <p><%= submit_tag 'Soumettre' %></p>
-<% end %>
-
-<%= link_to 'Liste ragots', gossips_path %>
